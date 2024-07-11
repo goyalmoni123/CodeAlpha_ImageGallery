@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="main-image">
+            <img id="current-image" src="Images/img5.jpg" alt="Main Image">
+            <div id="caption">Bold Scene</div>
+            <div id="description">Looks rugged</div>
+        </div>
+        <div class="progress-bar" id="progress-bar"></div>
+        <div class="thumbnails">
+            <img src="Images/Img1.jpg" alt="Thumbnail 1" onclick="changeImage('Images/Img1.jpg', 'Rugged Terrain', 'Sturdy')">
+            <img src="Images/Img2.jpg" alt="Thumbnail 2" onclick="changeImage('Images/Img2.jpg', 'Bold Look', 'Mighty')">
+            <img src="Images/img3.jpg" alt="Thumbnail 3" onclick="changeImage('Images/img3.jpg', 'Epic', 'Impressive')">
+            <img src="Images/img4.jpg" alt="Thumbnail 4" onclick="changeImage('Images/img4.jpg', 'Chill', 'Relaxed')">
+            <img src="Images/img5.jpg" alt="Thumbnail 5" onclick="changeImage('Images/img5.jpg', 'Bold Scene', 'Looks rugged')">
+            <img src="Images/img6.jpg" alt="Thumbnail 6" onclick="changeImage('Images/img6.jpg', 'Legendary', 'Powerful')">
+            <img src="Images/img7.jpg" alt="Thumbnail 7" onclick="changeImage('Images/img7.jpg', 'Calm', 'Serene')">
+            <img src="Images/img8.jpg" alt="Thumbnail 8" onclick="changeImage('Images/img8.jpg', 'Majestic', 'Impressive')">
+        </div>
+        <div class="navigation">
+            <button onclick="prevImage()">Previous</button>
+            <button onclick="nextImage()">Next</button>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
+
+

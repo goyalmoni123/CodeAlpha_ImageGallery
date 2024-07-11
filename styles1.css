@@ -1,0 +1,104 @@
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+
+.gallery-container {
+    text-align: center;
+    position: relative;
+    width: 80%;
+}
+
+.main-image {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.main-image img {
+    width: 40%;
+    height: auto;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.main-image img:hover {
+    transform: scale(1.05);
+}
+
+#caption {
+    margin-top: 100px;
+    font-size: 90px;
+    color: #333;
+}
+
+#description {
+    margin-top: 5px;
+    font-size: 70px;
+    color: #666;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.thumbnails img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+.thumbnails img.active {
+    border: 7px solid #49e9ca;
+}
+
+.thumbnails img:hover {
+    border: 7px solid #49e9ca;
+}
+
+.navigation {
+    margin-top: 20px;
+}
+
+.navigation button {
+    padding: 10px 20px;
+    font-size:30px;
+    cursor: pointer;
+    border: none;
+    background-color:#002147;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navigation button:hover {
+    background-color: black;
+}
+
+.progress-bar {
+    width: 0;
+    height: 5px;
+    background-color:#5f3331;
+    margin-top: 10px;
+    transition: width 0.3s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
